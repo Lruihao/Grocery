@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="${pageContext.request.contextPath }/js/jquery-1.4.4.min.js"></script>
+<title>Script for CSDN</title>
+<link rel="icon" href="/images/favicon-32x32-next.png" type="image/x-icon"/>
+
+<script type="text/javascript">
+    var maxtime = 65;//70s倒计时
+    function CountDown() {
+        if (maxtime >= 0) {
+            seconds = Math.floor(maxtime);
+            msg = "倒计时： "+ seconds + " 秒";
+            document.all["timer"].innerHTML = msg;
+            --maxtime;
+        } else clearInterval(timer);
+    }
+        timer = setInterval("CountDown()", 1000);               
+</script>
+
+</head>
+<body bgcolor="gray">
+
+
+<br>
+<h1 align="center"><font color=red face=STXingkai>Σ( ° △ °|||)︴ 卧槽！！！  Σ(っ °Д °;)っ</font></h1>
+<div id="timer" style="color:red" align="center"></div>
+<div id="warring" style="color:red" align="center"></div>
+<h3 align="center"><font color=blue>↓&nbsp;&nbsp;&nbsp;↓&nbsp;&nbsp;&nbsp;↓&nbsp;&nbsp;&nbsp;↓&nbsp;&nbsp;&nbsp;↓</font></h3>
+<h1 align="center"><a href="https://github.com/Lruihao/csdn"><img src="https://i.loli.net/2018/08/02/5b62c224d3168.gif" width="500" hegiht="500"></a></h1>
+<br>
+<h3 align="center">--> &nbsp;一个简陋的csdn脚本，没啥技术含量，闹着玩的</h2>
+<p>
+<h3 align="center">--> &nbsp;请在电脑上打开并允许浏览器弹窗</h2>
+<br>
+<h5 align="center">page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"</h5>
+
+
+
+<script type="text/javascript">
+	//指定地址前缀地址
+	var basc_address = "https://blog.csdn.net/qq_39520417/article/details/";
+	//初始化地址后缀
+	var new_address = "";
+	//负责指定文章地址后缀并调用开启窗口函数
+	function createNumberAndOpenWindow(){
+		//alert("number function");
+		//定义数组存储后缀
+		var numberArray = new Array(29);
+ 		//存储后缀
+ 		numberArray[0] = 80560730;
+ 		numberArray[1] = 81941206;//
+ 		numberArray[2] = 81178176;
+ 		numberArray[3] = 81569637;
+ 		numberArray[4] = 81569657;
+ 		numberArray[5] = 81569793;
+ 		numberArray[6] = 81569810;
+ 		numberArray[7] = 81569893;
+ 		numberArray[8] = 81569905;
+ 		numberArray[9] = 81569925;
+ 		numberArray[10] = 81569946;
+ 		numberArray[11] = 81569968;
+ 		numberArray[12] = 81569982;
+ 		numberArray[13] = 81569997;
+ 		numberArray[14] = 81570094;
+ 		numberArray[15] = 81570056;
+ 		numberArray[16] = 81570021;
+ 		numberArray[17] = 81588979;
+ 		numberArray[18] = 81940473;
+ 		numberArray[19] = 81940687;
+ 		numberArray[20] = 81940813;
+ 		numberArray[21] = 81940860;
+ 		numberArray[22] = 81940898;
+ 		numberArray[23] = 81940939;
+ 		numberArray[24] = 81940988;
+ 		numberArray[25] = 81941036;
+ 		numberArray[26] = 81941075;
+ 		numberArray[27] = 81941111;
+ 		numberArray[28] = 81941154;
+ 		
+ 		//遍历
+ 		for(var i = 0; i <numberArray.length;i++){
+ 			//alert(numberArray.length);
+ 			//alert(numberArray[i]);
+ 			new_address = basc_address + numberArray[i];
+ 			//打开该地址
+ 			open_new();
+ 			//清空后缀
+ 			new_address = "";
+ 			//alert(i);
+ 		}
+ 		//循环结束后，终止使用该函数，并由定时器调配
+ 		//break;
+ 		
+ 		//为新地址地址添加后缀
+ 		/* new_address = basc_address + numberArray[0];
+ 		alert(new_address);
+ 		//清除新地址
+ 		new_address = "";
+ 		alert(new_address); */
+	}
+	
+	//负责打开窗口,并关闭
+	function open_new(){
+		//number(); 
+		//alert(new_address);
+		var new_window =  window.open(new_address,'','width=100,height=100');
+		setTimeout(function(){
+			//开启后3s关闭
+			new_window.close();
+		}, 4000);
+	}
+
+	function myrefresh(){
+      window.location.reload();
+	}
+
+	createNumberAndOpenWindow();
+	setTimeout('myrefresh()',65000); //指定65s秒刷新一次
+
+	/*window.onload =function(){
+		 createNumberAndOpenWindow();
+		 //设置定时函数，80s回调一次
+		 var timer =  setInterval("createNumberAndOpenWindow()", 80000);
+		 
+	}*/
+
+
+	
+</script>
+</body>
+</html>
