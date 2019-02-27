@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="gbk"?>
+<paras author="badcat">
+	<programpara>
+		<autostart>0</autostart>
+		<minimize>0</minimize>
+		<clientexedir>client_windows_amd64.exe</clientexedir>
+		<autoconn enable="0">5</autoconn>
+	</programpara>
+	<clientnodes>
+		<node id="{7A922C5E-E005-43A6-8817-68955BA2844A}" runstate="1" remark="">
+			<json enable="0"></json>
+			<localport allowonlylocal="0">12984</localport>
+			<kcpserverip>139.180.219.76</kcpserverip>
+			<kcpserverport>29900</kcpserverport>
+			<key enable="1">456123</key>
+			<crypt enable="1">none</crypt>
+			<nocomp enable="0"/>
+			<datashard enable="1">10</datashard>
+			<parityshard enable="1">3</parityshard>
+			<conn enable="0"></conn>
+			<mtu enable="1">1400</mtu>
+			<sndwnd enable="1">1024</sndwnd>
+			<rcvwnd enable="1">1024</rcvwnd>
+			<dscp enable="1">0</dscp>
+			<autoexpire enable="0"></autoexpire>
+			<scavengettl enable="0"></scavengettl>
+			<quiet enable="0"/>
+			<mode enable="1">fast3</mode>
+			<nodelay enable="0"/>
+			<interval enable="0"></interval>
+			<resend enable="0"></resend>
+			<nc enable="0"/>
+			<acknodelay enable="0"/>
+			<keepalive enable="0"></keepalive>
+			<sockbuf enable="0"></sockbuf>
+		</node>
+	</clientnodes>
+</paras>
