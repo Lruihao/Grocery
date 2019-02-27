@@ -1,0 +1,1 @@
+key=456123;crypt=none;mode=fast3;mtu=1400;sndwnd=1048;rcvwnd=1048;datashard=10;parityshard=3;dscp=0
