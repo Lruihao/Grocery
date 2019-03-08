@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QQ卡片生成</title>
+</head>
+<body>
+
+<br /><br /><br /><br /><br /><br /><br />
+<div style="text-align: center;">  
+    <input type = "text" id = "input" value="" />   
+    <input type = "button" value = "疯狂刷新" onclick = "yanzheng()" />  
+</div>
+<br />
+<p style="text-align: center;">qqxml强制抓取，使qq聊天中的链接自动转化为卡片式。<br />本页源码自行下载，或者前往<a href="https://github.com/Lruihao/Grocery/tree/master/javascript">Grocery</a></p>
+
+<script type="text/javascript">
+	//设置刷新前缀url=首页地址（最好使用https）https://lruihao.cn
+	var base_src = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshareget_urlinfo?url=";
+	//用户地址
+	var custom_src = "";
+	//初始化工作地址
+	var new_src = "";
+	
+	//负责打开窗口,并关闭
+	function open_new(){
+		var new_window =  window.open(new_src,'','width=400,height=200');
+		setTimeout(function(){
+			//开启后200ms关闭
+			new_window.close();
+		}, 200);
+	}
+
+	// 获取验证用户输入
+	function yanzheng(){
+    	var Input = document.getElementById('input');
+        var oValue = Input.value;
+        custom_src = oValue;
+        new_src = base_src + custom_src
+        if(oValue ==0){
+            alert('请输入地址');
+        }else{
+        	var timer =  setInterval("open_new()", 200);
+        }
+    }
+
+</script>
+</body>
+</html>
