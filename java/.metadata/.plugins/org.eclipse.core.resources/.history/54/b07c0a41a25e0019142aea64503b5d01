@@ -1,0 +1,16 @@
+package bignum;
+
+import java.util.Scanner;
+
+public class cheng {
+	public static void main(String args[]) {
+		Scanner sc=new Scanner(System.in);
+		String x=sc.nextLine(),y=sc.nextLine();
+		sc.close();
+		StringBuffer x1=new StringBuffer(x),y1=new StringBuffer(y);
+		x1.reverse();
+		y1.reverse();
+		int lx=x.length(),ly=y.length();
+		System.out.println(x+"\n"+y+"\n"+x1+"\n"+y1+lx+ly);
+	}
+}

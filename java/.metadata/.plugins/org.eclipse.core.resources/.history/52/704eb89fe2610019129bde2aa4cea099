@@ -1,0 +1,16 @@
+package base;
+
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class RegexTest {
+	public static void main(String[] args) {
+		Pattern patter=Pattern.compile("^((17[0-9])|(14[0-9])|(13[0-9])|(15[^4,\\\\D])|(18[0,5-9]))\\\\d{8}$");
+		Scanner sc=new Scanner(System.in);
+		String telnum=sc.nextLine();
+		sc.close();
+		Matcher matcher=patter.matcher(telnum);
+		System.out.println(telnum+"匹配结果： "+matcher.matches());
+	}
+}

@@ -1,0 +1,16 @@
+package radix;
+
+import java.util.Scanner;
+
+public class radix{
+	public static void main(String[] args) {
+		while(1) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("数字和进制：");
+		int x=sc.nextInt(),i=sc.nextInt();
+		sc.close();
+		String y=Integer.toString(x,i);
+		System.out.println(y);
+		}
+	}
+}

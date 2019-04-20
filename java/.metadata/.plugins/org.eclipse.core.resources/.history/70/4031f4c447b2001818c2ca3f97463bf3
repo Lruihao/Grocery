@@ -1,0 +1,14 @@
+﻿package ui;
+
+import java.awt.Font;
+
+public class JTextField extends javax.swing.JTextField{
+	private static final long serialVersionUID = 1L;
+
+	public JTextField(){
+        super();
+        this.setSize(180,30);
+        this.setFont(new Font("微软雅黑",0,14));
+        this.setDocument(new StringDeal());
+    } 
+}

@@ -1,0 +1,27 @@
+package code0507;
+
+public class Demo {
+public static void main(String[] args) {
+Sub sub = new Sub();
+System.out.println(sub);
+
+}
+class Super{
+int a=6;
+
+public Super() {
+test();
+}
+public void test() {
+System. out. println(a);
+}
+class Sub extends Super{
+inta=8;
+
+public Sub() {
+test();
+}
+public void test() {
+System. out. println(a);
+}
+}
