@@ -75,7 +75,7 @@ for file_names in ls:
 			x = 0
 			y += 1
 				
-img = image.save(curr_dir + "all.jpg")
+img = image.save(curr_dir + "all.png")# all.jpg
 
 
 try:
