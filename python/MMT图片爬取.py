@@ -36,9 +36,9 @@ def main():
 			n = 65281
 			continue
 
-	# for n in range(37341,40864):
+	# for n in range(37341,40865):
 		num = str(n)
-		IMAGE_URL = BASE_URL+num+".png" # xxx.png是透明背景，xxx.png@50q是白色背景，分别存放在0，1文件夹
+		IMAGE_URL = BASE_URL+num+".png" # xxx.png是透明背景，xxx.png@50q是白色背景，分别存放在0，1文件夹 p是中小 w是小图
 		if(get_status(IMAGE_URL)==200): # 同时下载透明和白色背景的图片
 			total+=1
 			urllib_download(IMAGE_URL,"0\\"+num)
