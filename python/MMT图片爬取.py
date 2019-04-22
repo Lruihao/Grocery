@@ -36,6 +36,7 @@ def main():
 			n = 65281
 			continue
 
+	# for n in range(37341,40864):
 		num = str(n)
 		IMAGE_URL = BASE_URL+num+".png" # xxx.png是透明背景，xxx.png@50q是白色背景，分别存放在0，1文件夹
 		if(get_status(IMAGE_URL)==200): # 同时下载透明和白色背景的图片
