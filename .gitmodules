@@ -1,3 +1,6 @@
 [submodule "HW"]
 	path = HW
 	url = git@github.com:Lruihao/HW.git
+[submodule "MMT"]
+	path = MMT
+	url = git@github.com:Lruihao/MMT.git
