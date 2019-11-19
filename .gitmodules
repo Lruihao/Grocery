@@ -4,3 +4,9 @@
 [submodule "MMT"]
 	path = MMT
 	url = git@github.com:Lruihao/MMT.git
+[submodule "python-funny-code"]
+	path = python-funny-code
+	url = git@github.com:Lruihao/python-funny-code.git
+[submodule "ACM-VJ-AC"]
+	path = ACM-VJ-AC
+	url = git@github.com:Lruihao/ACM-VJ-AC.git
