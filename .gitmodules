@@ -13,3 +13,6 @@
 [submodule "c-code"]
 	path = c-code
 	url = git@github.com:Lruihao/c-code.git
+[submodule "java-code"]
+	path = java-code
+	url = git@github.com:Lruihao/java-code.git
