@@ -10,3 +10,6 @@
 [submodule "ACM-VJ-AC"]
 	path = ACM-VJ-AC
 	url = git@github.com:Lruihao/ACM-VJ-AC.git
+[submodule "c-code"]
+	path = c-code
+	url = git@github.com:Lruihao/c-code.git
